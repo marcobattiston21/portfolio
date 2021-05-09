@@ -26,6 +26,14 @@ export default function() {
       }, defaultProps)
   );
   
+  ScrollReveal().reveal('.hero-titlee', 
+    assignProps(
+      { 
+        delay: 500, 
+        origin: window.innerWidth > 768 ? 'left' : 'bottom'
+      }, defaultProps)
+  );
+  
   ScrollReveal().reveal('.hero-cta', 
     assignProps(
       {
